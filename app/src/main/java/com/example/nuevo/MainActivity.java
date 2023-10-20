@@ -31,12 +31,19 @@ public class MainActivity extends AppCompatActivity {
         rb6= (RadioButton)findViewById(R.id.radioButton6);
         rb7= (RadioButton)findViewById(R.id.radioButton7);
         tv = (TextView) findViewById(R.id.text1);
+        b = (Button) findViewById(R.id.button);
+        b.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent i = new Intent(MainActivity.this, Pantalla2.class);
+                startActivity(i);
+            }
+        });
+
     }
     public void siguiente(View view){
         Intent i = new Intent(this, Pantalla2.class);
         startActivity(i);
     }
-
-    if
 
 }
